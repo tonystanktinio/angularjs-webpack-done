@@ -1,0 +1,111 @@
+<div class="container-custom">
+  <!--Header container-->
+  <header style="position:relative;">
+    <!--  Top Header Default-->
+    <ng-container *ngIf="!showHeader1">
+      <div class="top-header default">
+        <!--Header Left-->
+        <div class="top-header_left">
+          <img src="assets/tinder_logo_white.png" alt="logo_white">
+        </div>
+        <!--Header Right-->
+        <div class="top-header_right">
+          <button class="login" (click)="login()">Log In</button>
+          <button mat-icon-button>
+            <mat-icon style="color: white;  font-size: 2.5rem;" (click)="toggleHeader1()">menu</mat-icon>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+
+
+    <!--  Top Header Header1-->
+    <ng-container *ngIf="showHeader1">
+      <div class="top-header header-1" style="position: absolute;">
+        <div class="top-1">
+        <!--Header Left-->
+          <div class="top-header_left">
+            <img src="assets/tinder_color.png" alt="logo_colored">
+          </div>
+          <!--Header Right-->
+          <div class="top-header_right">
+            <div class="top-header_right_top_content">
+              <button class="login">Log In</button>
+              <button mat-icon-button class="icon-button" (click)="toggleHeader1()">
+                <mat-icon>clear</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Main Header Content-->
+        <div class="main-content" style="position:relative;">
+          <div class="content-top">
+            <div class="container-fluid w-90">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="mb-2"><strong class="text-uppercase">Language</strong></p>
+
+                  <p class="d-flex align-items-center"><mat-icon class="mr-2">arrow_drop_up</mat-icon> <span>English</span></p>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Company</h3>
+                  <p>Jobs</p>
+                  <p>Contact</p>
+                  <p>Security</p>
+                </div>
+                <div class="col-md-3">
+                  <h3>Community</h3>
+                  <p>Blog</p>
+                  <p>Tech Blog</p>
+                  <p>Press</p>
+                  <p>Support</p>
+                  <p>Promo Code</p>
+                </div>
+                <div class="col-md-3">
+                  <h3>Partners</h3>
+                  <p>Hey! Vina</p>
+                  <p>Spotify</p>
+                </div>
+                <div class="col-md-3">
+                  <h3>Legal</h3>
+                  <p>Privacy</p>
+                  <p>Terms</p>
+                  <p>Cookie Policy</p>
+                  <p>Safety & Policy Center</p>
+                  <p>Safety Tips</p>
+                  <p>Community Guidelines</p>
+                  <p>Intellectual Property</p>
+                </div>
+              </div>
+
+              <div class="row" style="padding: 10px;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+  </header>
+
+  <main class="mainpage-content">
+    <div style="position: relative;">
+      <h1>Swipe Right <span>&reg;</span></h1>
+    </div>
+
+    <button class="create-account" (click)="login()">Create Account</button>
+  </main>
+
+
+</div>
+
+
+<!--Main content-->
+<!--  H1-->
+<!--  Button-->
